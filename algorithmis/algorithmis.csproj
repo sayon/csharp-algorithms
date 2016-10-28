@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D83B3B06-DE14-48F3-B7B0-221549EF95BB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Algorithmis</RootNamespace>
+    <AssemblyName>Algorithmis</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AVLTree.cs" />
+    <Compile Include="BST.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="DataStructures\AbstractStructures\Polynomial.cs" />
+    <Compile Include="DataStructures\AbstractStructures\Rings.cs" />
+    <Compile Include="DataStructures\AbstractStructures\Groups.cs" />
+    <Compile Include="DataStructures\Graphs\GraphBase.cs" />
+    <Compile Include="DataStructures\Graphs\IDotSerializeable.cs" />
+    <Compile Include="DataStructures\Graphs\IGraph.cs" />
+    <Compile Include="DataStructures\Graphs\PlainGraph.cs" />
+    <Compile Include="DataStructures\Graphs\DottySerializer.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\CartesianTree.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\CutTree.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\FenwickTree.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\TreeBase.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\TreeGraph.cs" />
+    <Compile Include="DataStructures\HashMaps\HashFunctionsFamily.cs" />
+    <Compile Include="DataStructures\HashMaps\HashMapIsFullException.cs" />
+    <Compile Include="DataStructures\HashMaps\HashMapLinear.cs" />
+    <Compile Include="DataStructures\HashMaps\HashMapPerfect.cs" />
+    <Compile Include="DataStructures\HashMaps\IHashMap.cs" />
+    <Compile Include="DataStructures\HashMaps\Chaining.cs" />
+    <Compile Include="Demos\Demo.cs" />
+    <Compile Include="Demos\LCAThroughRMQDemo.cs" />
+    <Compile Include="Demos\PolynomialDemo.cs" />
+    <Compile Include="Demos\RsaDemo.cs" />
+    <Compile Include="Numbers\Euclid.cs" />
+    <Compile Include="Numbers\FastFourierTransform.cs" />
+    <Compile Include="Numbers\INumber.cs" />
+    <Compile Include="Numbers\RSA.cs" />
+    <Compile Include="Util\IEnumerableUtils.cs" />
+    <Compile Include="Util\StructureUtil.cs" />
+    <Compile Include="TreeAlgorithms\RMQnLCA\RangeMinQueryTree.cs" />
+    <Compile Include="TreeAlgorithms\RMQnLCA\IRMQTaskSolver.cs" />
+    <Compile Include="TreeAlgorithms\RMQnLCA\LCAThroughRMQTaskSolver.cs" />
+    <Compile Include="TreeAlgorithms\RMQnLCA\RangeMaxQueryTree.cs" />
+    <Compile Include="DataStructures\Matrix.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\BinaryTree.cs" />
+    <Compile Include="DataStructures\Graphs\Trees\ITree.cs" />
+    <Compile Include="Demos\DijkstraDemo.cs" />
+    <Compile Include="Demos\FenwickTreeDemo.cs" />
+    <Compile Include="Demos\IDemo.cs" />
+    <Compile Include="Demos\RMQDemo.cs" />
+    <Compile Include="Util\Extensions.cs" />
+    <Compile Include="Helpers\Operations.cs" />
+    <Compile Include="Numbers\KaratsubaMultiplication.cs" />
+    <Compile Include="Numbers\BigInt.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TreeAlgorithms\ShortestPaths\BellmanFord.cs" />
+    <Compile Include="TreeAlgorithms\ShortestPaths\FloydWarshall.cs" />
+    <Compile Include="TreeAlgorithms\ShortestPaths\Dijkstra.cs" />
+    <Compile Include="Util\NumberUtil.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
